@@ -1,0 +1,13 @@
+<!--pages/controler/controler.wxml-->
+<!-- <text>遥控器</text> -->
+<button bindtap="Forward" style="position: relative; left: 26rpx; top: 73rpx; width: 200rpx; height: 80rpx; display: block; box-sizing: border-box">前进</button>
+<button bindtap="Back" style="position: relative; left: 19rpx; top: 165rpx; width: 200rpx; height: 80rpx; display: block; box-sizing: border-box">后退</button>
+<button bindtap="Left" style="position: relative; left: -181rpx; top: -8rpx; width: 200rpx; height: 80rpx; display: block; box-sizing: border-box">左转</button>
+<button bindtap="Right" style="position: relative; left: 220rpx; top: -75rpx; width: 200rpx; height: 80rpx; display: block; box-sizing: border-box">右转</button>
+<button bindtap="Auto" style="position: relative; left: 19rpx; top: 303rpx; width: 300rpx; height: 80rpx; display: block; box-sizing: border-box" type="primary">自动模式</button>
+<button bindtap="Planting" style="position: relative; left: 218rpx; top: 383rpx; width: 200rpx; height: 80rpx; display: block; box-sizing: border-box" type="primary">种植</button>
+<button bindtap="Change" style="position: relative; left: -174rpx; top: 303rpx; width: 200rpx; height: 80rpx; display: block; box-sizing: border-box" type="primary">换苗</button>
+<button bindtap="Stop" style="position: relative; left: 19rpx; top: -101rpx; width: 300rpx; height: 80rpx; display: block; box-sizing: border-box" type="warn" plain="false">紧急停止</button>
+<button style="position: relative; left: -180rpx; top: 264rpx; width: 200rpx; height: 76rpx; display: block; box-sizing: border-box" bindtap="up">上爪</button>
+<button style="position: relative; left: 218rpx; top: 188rpx; width: 200rpx; height: 76rpx; display: block; box-sizing: border-box" bindtap="down">下爪</button>
+

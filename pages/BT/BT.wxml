@@ -1,0 +1,25 @@
+<!--pages/BT/BT.wxml-->
+
+
+<button bindtap="getDevice">获得周边蓝牙设备</button>
+<view wx:if="{{showFlage}}" wx:for="{{devices}}" wx:for-item="device" wx:key="key" bindtap="create" data-index="{{index}}">
+  <view style="height: 100rpx;">名称：{{device.name}} ID:{{device.deviceId}}</view>
+</view>
+
+<view wx:if="{{showflage}}">蓝牙设备：{{name}} ID:{{deviceId}}</view>
+<view wx:if="{{showflage}}">点击以下服务值获得特征值</view>
+<view wx:for="{{services}}" wx:for-item="service" wx:key="key" bindtap="choose" data-index="{{index}}">
+  <view style="color: red ; height: 100rpx;" wx:if="{{showflage}}"> 服务值：{{service.uuid}}</view>
+</view>
+<view wx:if="{{showflage}}">点击以下特征值读写数据</view>
+<view wx:for="{{characteristics }}" wx:for-item="characteristic" wx:key="key" bindtap="select" data-index ="{{index}}" style="color: blue;" wx:if="{{showflage}}">
+    <view> 特征值：{{characteristic.uuid}}  read:{{characteristic.properties.read}}  write:{{characteristic.properties.write}}</view>
+  </view>
+<button wx:if="{{showflage}}" bindtap="disconnect">断开连接并返回</button>
+
+<view wx:if="{{showflage}}" style="background-color: honeydew;">请输入数据:
+<input style="height: 100rpx;width: 750rpx;" focus="{{showKeyboard}}" confirm-type="send" bindconfirm="sendData"></input >
+</view>
+<View  wx:if="{{showflage}}" style="background-color: darkgrey;">接收到的数据：</View>
+<view  wx:if="{{showflage}}">{{showData}}</view>
+<button wx:if="{{showflage}}"type="default" size="defaultSize"  bindtap="yaokong"> 遥控器 </button>

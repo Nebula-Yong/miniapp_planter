@@ -1,0 +1,6 @@
+<!--pages/auto/auto.wxml-->
+
+<button bindtap="Start" style="position: relative; left: 10rpx; top: 64rpx; width: 450rpx; height: 80rpx; display: block; box-sizing: border-box" type="primary">开始运行自动模式</button>
+<text style="position: relative; left: 3rpx; top: 203rpx">种植间距设置:</text>
+<input style="position: relative; left: 265rpx; top: 128rpx; width: 450rpx; height: 99rpx; display: block; box-sizing: border-box"  class="weui-input" auto-focus placeholder="请输入自动模式的种植间距" confirm-type="send" bindconfirm="sendData"/>
+
